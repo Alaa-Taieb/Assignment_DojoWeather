@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <!-- Container Start -->
+    <div class="container">
+        <!-- Header Start -->
+        <div class="header">
+            <div class="center">
+                <h1>DojoWeather</h1>
+                <nav>
+                    <a href="#" onclick="alertLoadingCityData(this)">Burbank</a>
+                    <a href="#" onclick="alertLoadingCityData(this)">Chicago</a>
+                    <a href="#" onclick="alertLoadingCityData(this)">Dallas</a>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- Main Start -->
+        <div class="main">
+            <div class="main_header">
+                <h2>San Jose</h2>
+                <div class="measurement_system">
+                    <label for="temp_sys">Show temperature in</label>
+                    <select name="temp_sys" id="temperature_system" onchange="changeSystem(this)">
+                        <option value="C">&#8451</option>
+                        <option value="F">&#8457</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Section 1 Start -->
+            <div class="section_1">
+                <!-- Article Start -->
+                <article>
+                    <h2>Today</h2>
+                    <img src="assets/some_rain.png" alt="Some Rain">
+                    <p>some rain</p>
+                    <div class="temp_extremities">
+                        <div class="high"><span class="temprature">24</span>&#xb0;</div>
+                        <div class="low"><span class="temprature">18</span>&#xb0;</div>
+                    </div>
+                </article>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <article>
+                    <h2>Tomorrow</h2>
+                    <img src="assets/some_sun.png" alt="Some Sun">
+                    <p>some sun</p>
+                    <div class="temp_extremities">
+                        <div class="high"><span class="temprature">27</span>&#xb0;</div>
+                        <div class="low"><span class="temprature">19</span>&#xb0;</div>
+                    </div>
+                </article>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <article>
+                    <h2>Friday</h2>
+                    <img src="assets/some_clouds.png" alt="Some Clouds">
+                    <p>some clouds</p>
+                    <div class="temp_extremities">
+                        <div class="high"><span class="temprature">21</span>&#xb0;</div>
+                        <div class="low"><span class="temprature">16</span>&#xb0;</div>
+                    </div>
+                </article>
+                <!-- Article End -->
+                <!-- Article Start -->
+                <article>
+                    <h2>Saturday</h2>
+                    <img src="assets/some_sun.png" alt="Some Sun">
+                    <p>some sun</p>
+                    <div class="temp_extremities">
+                        <div class="high"><span class="temprature">26</span>&#xb0;</div>
+                        <div class="low"><span class="temprature">21</span>&#xb0;</div>
+                    </div>
+                </article>
+                <!-- Article End -->
+            </div>
+            <!-- Section 1 End -->
+        </div>
+        <!-- Main End -->
+        <!-- Alert Box Start -->
+        <div class="alert_box" id="alert_box">
+            <img src="assets/cookie.png" alt="Cookie IMG">
+            <section>
+                <h2>Stop! Cookie time</h2>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyse our traffic. <a href="#">Read More...</a>
+                </p>
+            </section>
+            <button onclick="removeElement('alert_box')">I Accept</button>
+
+        </div>
+        <!-- Alert Box End -->
+    </div>
+    <!-- Container End -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
